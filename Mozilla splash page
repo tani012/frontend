@@ -1,0 +1,134 @@
+## HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mozilla Splash Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="firefox_logo-only_RGB.png" alt="Firefox Logo" width="400">
+    <h1>Mozilla</h1>
+  </header>
+
+  <main>
+    <article>
+      <iframe width="400" height="225" 
+              src="https://www.youtube.com/embed/ojcNcvb1olg" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+      <p>Mozilla is a global community dedicated to building an open, free, and accessible internet for everyone. Learn more about our mission, products, and initiatives below.</p>
+    </article>
+
+    <div class="further-info">
+      <a href="https://addons.mozilla.org/">
+        <img src="firefox-addons.jpg" alt="Firefox Add-ons" width="400">
+      </a>
+      <a href="https://developer.mozilla.org/">
+        <img src="mdn.svg" alt="MDN Web Docs">
+      </a>
+      <a href="https://www.mozilla.org/">
+        <img src="mozilla-dinosaur-head.png" alt="Mozilla Dinosaur Head" width="400">
+      </a>
+      <a href="https://www.mozilla.org/firefox/">
+        <img src="firefox_logo-only_RGB.png" alt="Firefox Logo" width="400">
+      </a>
+    </div>
+
+    <div class="red-panda">
+      <img src="red-panda-1200px.jpg" alt="Red Panda" width="1200">
+    </div>
+  </main>
+
+ 
+</body>
+</html>
+
+
+
+
+## CSS
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+article {
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+article iframe {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+}
+
+article div {
+  flex: 2;
+}
+
+.further-info {
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+}
+
+.further-info a img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.red-panda {
+  text-align: center;
+}
+
+.red-panda img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
